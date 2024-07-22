@@ -1,0 +1,4 @@
+# Uncomment these and add you private spoonacular api key
+# spoonacular:
+#   api:
+#       key: "YOUR_SPOONACULAR_API_KEY"
