@@ -1,10 +1,5 @@
 server:
-  port: 8443
-  ssl:
-    key-store: classpath:keystore.p12
-    key-store-password: changeit
-    key-store-type: PKCS12
-    key-alias: my-https-cert
+  port: 8080
 
 api:
   cors:
