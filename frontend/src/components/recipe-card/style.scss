@@ -1,0 +1,44 @@
+.card {
+  height: 435px;
+  width: 286px;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.1);
+
+  .card-body-wrapper {
+    cursor: pointer;
+
+    .card-img-wrapper {
+      overflow: hidden;
+      height: 200px;
+
+      .card-img-top {
+        height: 100%;
+        transform: scale(1);
+        overflow: hidden;
+
+        &:hover {
+          transform: scale(1.2);
+          transition: transform 0.5s ease;
+        }
+      }
+    }
+
+    .card-body {
+      height: 100px;
+    }
+  }
+
+  .list-group {
+    background-color: #FFE8C8;
+  }
+
+  .card-footer {
+    height: 50px;
+  }
+
+  &:hover {
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.25);
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+  }
+
+}

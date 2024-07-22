@@ -1,0 +1,17 @@
+.container {
+  max-width: 90% !important;
+}
+
+.card {
+  &.recipe-detail {
+
+    .card-footer {
+      height: auto;
+      background-color: #FFC96F;
+    }
+
+    &:hover {
+      transform: none;
+    }
+  }
+}

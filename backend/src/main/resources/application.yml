@@ -1,0 +1,33 @@
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: changeit
+    key-store-type: PKCS12
+    key-alias: my-https-cert
+
+api:
+  cors:
+    allowed-origins: "*"
+    allowed-methods: "*"
+    allowed-headers: "*"
+    allow-credentials: false
+
+spring:
+  application:
+    name: myfoodapp
+  profiles:
+    active: dev
+
+spoonacular:
+  api:
+    # key: Add your private API key in your custom application-dev.yml file
+    base-url: https://api.spoonacular.com
+  recipes:
+    results-per-page: 5
+    results-start-page: 1
+    search-path: recipes/complexSearch
+    information-path: recipes/{id}/information
+    nutrition-path: recipes/{id}/nutritionWidget.json
+    random-recipes-path: recipes/random
+    random-recipes-count: 4
